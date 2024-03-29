@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul a li{
+    padding: 3px;
+    transition: 0.5s ease;
+}
+ul a li:hover{
+    background-color: #fff;
+    color: #000;
+}
+#planet_Name{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+#planet_Name:hover{
+    background-color: #fff;
+    color: #ba423f;
+    scale: 1.02;
+}
