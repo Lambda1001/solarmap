@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/solarsystem';
+    protected $redirectTo = 'solarsystem.solarsystem';
 
     /**
      * Create a new controller instance.
