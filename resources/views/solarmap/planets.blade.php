@@ -8,10 +8,10 @@
         </div>
         <div class="col-2">
             <div class="fs-4">
-                Some description about the solar system
+                A vast and fascinating place, consisting of the Sun, which is a main-sequence star, and all the objects(Planets, Moons and Comets) bound to it by gravity
             </div>
         </div>
-        <div style="position: absolute; right:20px; top: 50%; transform: translateY(-20%); width: 500px; height: 500px; border-radius: 50%; border: 1px solid #b3b3b329; padding: 1px;">
+        <div style="z-index: -10; position: absolute; right:20px; top: 50%; transform: translateY(-20%); width: 500px; height: 500px; border-radius: 50%; border: 1px solid #b3b3b329; padding: 1px;">
             <img src="/img/sun.png" alt="Image of the sun" class="img-fluid">
         </div>
     </div>
