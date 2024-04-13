@@ -17,8 +17,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!--scripts V2 -->
-    <script src="{{ asset('public/js/app.js') }}" defer></script>
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    @vite('resources/js/app.js')
+    
 </head>
 <body style="background-color: #000; ">
     <div id="app">
