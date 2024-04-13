@@ -16,9 +16,9 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <!--script V2-->
-    <script src="{{ asset('public/js/app.js') }}" defer></script>
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    <!--scripts-->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    
 </head>
 <body>
     <div id="app">
