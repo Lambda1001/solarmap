@@ -34,14 +34,14 @@ class PlanetController extends Controller
         ]);
         $planetName = $planet['planetName'];
         $data = [];
-        // $API_response = Http::get('https://api.le-systeme-solaire.net/rest/bodies/'.$planetName);
-        // if($API_response->successful()){
-        //     $data = $API_response->json();
-        //     //dd($data);
-        // }
-        // else{
-        //     $data = [];
-        // }
+        $API_response = Http::get('https://api.le-systeme-solaire.net/rest/bodies/'.$planetName);
+        if($API_response->successful()){
+             $data = $API_response->json();
+             //dd($data);
+         }
+        else{
+             $data = [];
+         }
         return view('solarsystem.createplanet', compact('starId', 'data'));
     }
     public function storePlanet(Request $request, User $user){
