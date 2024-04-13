@@ -80,7 +80,7 @@ class PlanetController extends Controller
             'planetImage'=> $imagePath,
         ]);
         //dd($planet['planetImage']);
-        auth()->$user->$planet->save();
+        $user->$planet->save();
 
         return redirect('solarsystem');
     }
