@@ -18,6 +18,10 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <!--scripts V2 -->
+    <script src="{{ asset('public/js/app.js') }}" defer></script>
+    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
 </head>
 <body style="background-color: #000; ">
     <div id="app">
