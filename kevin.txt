@@ -1,0 +1,54 @@
+Anyduka.com
+Images dont display as intended. The server a 404 not found on the images. 
+ -issue might be image file size too big. (Intervention might fix), images might not be in the server's file system.
+ -php.ini on the server was modified to include images above 5MB.
+ -issue fixed: server admin solved issue on their side. On local machine was storage:link artisan command.
+ 
+Consult on the artisan/composer error on the forked project.
+ -Issue fixed: The php version was the issue( v8.2.*)
+ 
+Local development environment issue.
+ -.env file refuses to update from prod to local.
+ -issue fixed: a new env file was used, with its environment to local and the app-debug set to true.
+ 
+New functionality:
+  A new user can post 1 property but subsequent properties will require a subscription. The pricing is hardcoded. Learn the current subscription functionality.
+ 
+
+Anyduka.com.
+There are 7 models that pertain to this website. Properties,user,comment,completed payments,mpesastkpushes,subscription plan and user subscription (to clarify further). 
+How do each user get differentiated, from admin, buyer of vendor. How is the business category populated. The admin controls the status of property. When a property gets
+uploaded, the admin gets to approve the property after which it gets placed on the listing. The admin has access to the vendors, properties, orders and transactions
+
+
+Funtionality to check if property is sold:
+There is a flag(is_sold) that the admin has access to. This ties to a property in that: if a property is sold, is_sold becomes true. Otherwise, the property is not sold,
+and is_sold becomes false. This flag should affect the listing of the property. If sold, the property should be taken off the listing. For now, the property stays on the
+listing but the badge on it changes from for slae, for rent to sold.
+ -Committed to master branch, awaiting review.
+ 
+Ajax sync with the property views. 
+The website should automatically update when the database has a new entry. This can be achieved through AJAX synchronization. Figure out how the current code will be 
+made to include AJAX capability. The properties page should update when a new entry is made on the database.
+
+Add the free, and Airbnb plan to the website.
+
+Cron jobs cant handle users and userSubscription models. Trying an event listener and observer. A cron job can run the event daily. The event should decrease the number of 
+days by 1. 
+
+Next week:
+1.Airbnb and Apartment creation form.
+2.Accounts verification
+ -Modal to indicate to the user that the account has been registered and awaiting verification.
+3.UI and UX for the front page, and property listing page.
+ -Skeleton screens for front, listing page, creating a property
+4.Property Unique Ref. Number
+5.Locations API implementation
+ -Mapbox Geocoding api. (Requires a Card for billing);
+ -Google Places API (requires a card);
+6.Profiles page for the lister.
+7.Notification page UI.
+8.OAuth for google account
+9.Cookie Implementation
+
+Work on the comments part of the house page.
